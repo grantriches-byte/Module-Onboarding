@@ -31,6 +31,7 @@ main {
   max-width: 1100px;
   margin: 2rem auto;
   padding: 0 1rem;
+  padding-bottom: 4rem;
 }
 
 /* GRID LAYOUT */
@@ -83,7 +84,7 @@ article a:hover {
 footer {
   background: transparent;
   color: black;
-  text-align: center;
+  left: 45%;
   padding: 1rem;
  position: fixed;
  bottom: 0;
