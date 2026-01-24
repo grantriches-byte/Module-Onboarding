@@ -77,6 +77,8 @@ article img {
 article {
   background-color: #f4f6f8;
   padding: 1.5rem;
+  display:flex;
+  flex-direction: column;
 }
 
 
@@ -93,19 +95,23 @@ article h2 {
   margin-bottom: 0.75rem;
 }
 
-/* Links */
-article a {
+.button {
   display: inline-block;
-  margin-top: 1rem;
-  color: #0066cc;
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-article a:hover {
-  text-decoration: underline;
+article .button {
+  margin-top: auto;
+  align-self: flex-start;
 }
-
 /* Footer */
 footer {
   background: transparent;
