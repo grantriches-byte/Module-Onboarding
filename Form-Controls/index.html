@@ -1,27 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>T-Shirt Order Form</title>
+</head>
+<body>
+
+  <main>
+    <h1>Order Your T-Shirt</h1>
+
+    <form>
+
+      <!-- Customer Details -->
+      <fieldset>
+        <legend>Customer Details</legend>
+
+        <p>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required minlength="2">
+        </p>
+
+        <p>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required>
+        </p>
+
+      </fieldset>
+
+      <!-- T-Shirt Colour -->
+      <fieldset>
+        <legend>T-Shirt Colour</legend>
+
+        <p>Please choose a colour:</p>
+
+        <p>
+          <label>
+            <input type="radio" name="colour" value="red" required>
+            Red
+          </label>
+        </p>
+
+        <p>
+          <label>
+            <input type="radio" name="colour" value="blue">
+            Blue
+          </label>
+        </p>
+
+        <p>
+          <label>
+            <input type="radio" name="colour" value="green">
+            Green
+          </label>
+        </p>
+
+      </fieldset>
+
+      <!-- T-Shirt Size -->
+      <fieldset>
+        <legend>T-Shirt Size</legend>
+
+        <p>
+          <label for="size">Choose a size:</label><br>
+          <select id="size" name="size" required>
+            <option value="">--Please choose an option--</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </p>
+
+      </fieldset>
+
+      <!-- Submit Button -->
+      <p>
+        <button type="submit">Submit</button>
+      </p><!DOCTYPE html>
